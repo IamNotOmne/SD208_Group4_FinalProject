@@ -13,7 +13,7 @@
 
 <body>
     <div class="logo">
-        <img src="img/logo.png" alt="logo">
+        <img src="img/logo.png" alt="Logo" />
     </div>
     <div class="container">
         <div class="forms">
@@ -52,30 +52,4 @@
         </div>
     </div>
 </body>
-
-
-<!-- session_start();
-include('includes/config.php');
-if(isset($_POST['register']))
-{
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = md5($_POST['password']);
-
-    $query = mysqli_query($conn,"Select * from RegistrationForm where email = '$email'") or die(mysqli_error());
-    $count = mysqli_num_rows($query);
-
-    if ($count > 0){ ?>
-        <script>
-        alert('Data Already Exist');
-       </script>
-      
-    }else{
-mysqli_query($conn,"INSERT INTO RegistratinForm(name, email, password) VALUES ('$name','$email','$password') ") or die(mysqli_error()); ?>
-<script>alert('Records Successfully Added');</script>;
-<script>
-    window.location = "register.php";
-    </script>
-}
-} -->
 
