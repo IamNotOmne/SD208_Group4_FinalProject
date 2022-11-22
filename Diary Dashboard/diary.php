@@ -1,5 +1,5 @@
 <?php
-include('config.php')
+// include('config.php')
 ?>
 
 
@@ -22,8 +22,14 @@ include('config.php')
             </div>
             <!--Profile-->
             <div class="action">
-                <div class="user">
-                    
+                <div class="user" onclick="menuToggle();">
+                    <img src="img/avatar.png" alt="">
+                </div>
+                <div class="userMenu">
+                    <h3></h3>
+                    <ul>
+                        <li><a href="">Log Out</a></li>
+                    </ul>
                 </div>
             </div>
             <!--/Profile-->
@@ -48,6 +54,12 @@ include('config.php')
                             <button class="saveBtn" name="submit" type="submit">Save Diary</button>
                         </div>
                     </form>
+                </div>
+                <div class="switchContainer">
+                    <div class="switch">
+                        <a href=""><i class="fa-regular fa-lightbulb"></i></a>
+                   
+                    </div>
                 </div>
             </div>
         </aside>
@@ -80,5 +92,6 @@ include('config.php')
         </aside>
         
     </section>
+    <script src="js/diary.js"></script>
 </body>
 </html>

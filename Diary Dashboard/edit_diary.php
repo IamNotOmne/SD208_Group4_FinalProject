@@ -1,5 +1,5 @@
 <?php
-include('config.php')
+// include('config.php')
 ?>
 
 
@@ -22,8 +22,14 @@ include('config.php')
             </div>
             <!--Profile-->
             <div class="action">
-                <div class="user">
-                    
+                <div class="user" onclick="menuToggle();">
+                    <img src="img/avatar.png" alt="">
+                </div>
+                <div class="userMenu">
+                    <h3></h3>
+                    <ul>
+                        <li><a href="">Log Out</a></li>
+                    </ul>
                 </div>
             </div>
             <!--/Profile-->
@@ -35,8 +41,8 @@ include('config.php')
                     <h4 class="diaryName">Add Diary</h4>
                     <form method="POST">
 
-                        <?php $query = mysqli_query($conn,"select * from diary where diary_id = '$get_id' ") or die(mysqli_error());
-                        $row = mysqli_fetch_array($query);?>
+                        <?php //$query = mysqli_query($conn,"select * from diary where diary_id = '$get_id' ") or die(mysqli_error());
+                       // $row = mysqli_fetch_array($query);?>
 
                         <div class="formGroup">
                             <span class="spanForm"><label>Title</label></span>
@@ -56,6 +62,8 @@ include('config.php')
             </div>
         </aside>
         <!-- /Side Bar -->
+
+        <!-- Content of the Diary -->
         <aside class="wrapper2">
             <div class="navigation2">
                 <div class="contentDiary">
@@ -76,13 +84,14 @@ include('config.php')
                 </section>
             </div>
         </aside>
+        <!-- /Content of the Diary -->
         <aside class="viewDetails">
             <section class="scrollable">
                 <div class="viewWrapper">
                     <section class="panel">
                         <?php 
-                        $get_diary = mysqli_query($conn, "select * from diary WHERE diary_id = \"$get_id\"") or die(mysqli_error());
-                        while ($row = mysqli_fetch_array($get_diary)){
+                        //$get_diary = mysqli_query($conn, "select * from diary WHERE diary_id = \"$get_id\"") or die(mysqli_error());
+                       // while ($row = mysqli_fetch_array($get_diary)){
                         $id = $row['diary_id']; ?>
                         <h4 style="text-transform:uppercase;" class="font-thin padder"><b><?php echo $row['title'];?></b></h4>
                         <ul class="listGroup">
@@ -91,11 +100,12 @@ include('config.php')
                                 <small class="text-info"><i class="fa fa-clock-o text-info"></i><?php echo $diary['time_in']?></small>
                             </li>
                         </ul>
-                        <?php } ?>
+                        <?//php } ?>
                     </section>
                 </div>
             </section>
         </aside>
     </section>
+    <script src="js/diary.js"></script>
 </body>
 </html>

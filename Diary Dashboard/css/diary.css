@@ -5,6 +5,7 @@
 }
 html {
     background-color: #f7f7f7;
+    height:100%;
     overflow-x: hidden;
 }
 :root{
@@ -30,8 +31,10 @@ a:focus {
 
 /*Navigation Bar*/
 .navHead{
+    position: relative;
     background-color:var(--bg_almond);
     padding: 0;
+    height:60px;
 }
 .navbar-header{
     position: relative;
@@ -63,6 +66,68 @@ a:focus {
 .logo{
     margin-right: 10;
 }
+/*Profile*/
+.user{
+   position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.user img{
+    float: right;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top:0;
+    margin-right: 10px;
+}
+.action {
+    position: absolute;
+    right: 30px;
+    top: 10px
+}
+
+.action .userMenu ul li{
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0px;
+    z-index: 1;
+}
+.action .userMenu {
+    background-color: var(--bg_lightTaupe);
+    box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 10px 20px;
+    position: absolute;
+    right: -10px;
+    width: 100px;
+    transition: 0.5s;
+    top: 120px;
+    visibility: hidden;
+    opacity: 0;
+}
+.action .userMenu.active {
+    opacity: 1;
+    top: 60px;
+    visibility: visible;
+    z-index: 1;
+}
+.action .userMenu::after {
+    background-color: var(--bg_lightTaupe);
+    content: '';
+    height: 20px;
+    position: absolute;
+    right: 22px;
+    transform: rotate(45deg);
+    top: -5px;
+    width: 20px;
+}
+.action .userMenu ul li:hover a {
+    color: white;
+}
 /* End Navigation Bar*/
 
 /*Aside Navigation*/
@@ -80,6 +145,24 @@ aside{
 .navigation{
     float: right;
 }
+/* Switch Theme */
+.switchContainer{
+    position: absolute;
+    height:50px;
+    width:50px;
+    top:93vh;
+    bottom:0;
+    background-color: lavenderblush;
+}
+.switch i{
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+    margin:10px;
+    font-size: 20px;
+    cursor:pointer;
+}
+
 
 /*form*/
 .diaryName{
@@ -152,3 +235,4 @@ aside{
     padding: 30px 20px;
     border-bottom: 1px solid black;
 }
+
