@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include './php/ediarycookies.php';?>
 <html lang="en">
 
 <head>
@@ -8,12 +9,12 @@
     <title>E-Diary</title>
     <link rel="icon" href="Logo.png" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="./css/login.css" />
 </head>
 
 <body>
     <div class="logo">
-        <img src="Logo.png" alt="Logo" />
+        <img src="./img/Logo.png" alt="Logo" />
     </div>
     <div class="container">
         <div class="forms">
@@ -22,7 +23,7 @@
                     <br>
                     <span class="title">LOG IN</span>
                 </div>
-                <form action="" method="post">
+                <form action="" method="post" autocomplete="off">
                     <div class="textbeforeform">
                         <span class="text">Email</span>
                     </div>
@@ -41,17 +42,17 @@
 
                     <div class="checkbox-text">
                         <div class="checkbox-content">
-                            <input type="checkbox" id="logCheck" />
+                            <input type="checkbox" id="logCheck" name="remember"/>
                             <label for="logCheck" class="text">Remember me</label>
                         </div>
                     </div>
 
                     <div class="input-field button">
-                        <input class="log-sub" type="button" value="LOG IN" id="submit" />
+                        <input class="log-sub" type="submit" value="LOG IN" id="submit" name="login" />
                     </div>
                 </form>
                 <div class="login-signup">
-                    <a href="" class="signup">Create New Account</a><br />
+                    <a href="register.php" class="signup">Create New Account</a><br />
                 </div>
             </div>
         </div>
@@ -74,7 +75,7 @@
                     });
                 } else {
                     pwField.type = "password";
-
+                    
                     pwShowHide.forEach((icon) => {
                         icon.classList.replace("uil-eye", "uil-eye-slash");
                     });
@@ -83,5 +84,6 @@
         });
     });
 </script>
+
 
 </html>
