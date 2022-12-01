@@ -127,7 +127,6 @@
         color: #3F4E4F;
     }
     
-   
     .input-field i.showHidePw {
         right: 0;
         cursor: pointer;
@@ -140,7 +139,6 @@
         justify-content: space-between;
         margin-top: 20px;
     }
-
     .checkbox-text .checkbox-content {
         display: flex;
         align-items: center;
@@ -156,10 +154,10 @@
     .form a:hover {
         text-decoration: underline;
     }
-    
+/*     
     .form .button {
         margin-top: 35px;
-    }
+    } */
     
     .form .button input {
         border: none;
@@ -173,23 +171,21 @@
         transition: all 0.3s ease;
     }
     
-    
     .button input:hover {
         background-color: gray;
-
     }
     
-    .form .signup-login {
+    .form .login-signup {
         margin-top: 30px;
         text-align: center;
     }
 
-    .text {
+    .login-signup a:hover {
         text-decoration: none;
-        color: white;
+        color: #3F4E4F;
     }
 
-    .text a:hover {
+    .signup {
         text-decoration: none;
-        color: gray;
+        color: white;
     }
