@@ -23,7 +23,7 @@
               }else{
                 mysqli_query($conn,"INSERT INTO register(fullName, email, password) VALUES('$name','$e_mail','$pass')           
                 ") or die(mysqli_error($conn)); ?>
-                <script>alert('Records Successfully  Added');</script>;
+                <script>alert('Your Email Is Successfully  Added');</script>;
                 <script>
                 window.location = "login.php"; 
                 </script>
