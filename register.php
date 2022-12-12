@@ -3,7 +3,7 @@
     ob_start();
     session_start();
     require_once('includes/connect.inc');
-    $message = '';
+
 ?>
 <?php
 
@@ -33,7 +33,7 @@
              <?php } 
 
          else {
-            $message = "Register Failed";
+            echo "<script>alert('Register Failed')</script>";
         }
 
     ?>
