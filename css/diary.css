@@ -16,7 +16,10 @@ html {
     --pri-bg_5: lavenderblush;
     --c-1: #2e3e4e;
     --bc:black;
+<<<<<<< HEAD
     --scroll: brown ;
+=======
+>>>>>>> Ara
 
 
 }
@@ -177,7 +180,10 @@ aside{
     --pri-bg_5:  #A27B5C;
     --c-1:#fff;
     --bc:white;
+<<<<<<< HEAD
     --scroll: #C4A484 ;
+=======
+>>>>>>> Ara
 }
 .switchContainer{
     position: absolute;
@@ -346,6 +352,7 @@ aside{
 .navigation2 ul li{
     list-style-type: none;
 }
+<<<<<<< HEAD
 /* Scroller */
 .scroll-div::-webkit-scrollbar {
     
@@ -364,6 +371,10 @@ aside{
     overflow: hidden;
     overflow-y: scroll;
 }
+=======
+
+
+>>>>>>> Ara
 
 
 

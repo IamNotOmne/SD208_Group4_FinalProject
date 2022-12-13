@@ -126,7 +126,11 @@ if (mysqli_query($conn, $query)) {
                 <div class="contentDiary">
                     <h4 class="boldTitle" style="text-transform:uppercase; font-size:18px;"><a href=""><b>My Diary</b></a></h4>
                 </div>
+<<<<<<< HEAD
                 <div class="scroll-div">
+=======
+
+>>>>>>> Ara
                 <section class="details">
                     <div class="tab">
                         <ul class="listGroup">
@@ -145,7 +149,10 @@ if (mysqli_query($conn, $query)) {
                         </ul>
                     </div>
                 </section>
+<<<<<<< HEAD
                 </div>
+=======
+>>>>>>> Ara
             </div>
         </aside>
          <!-- / Content of the Diary -->
@@ -153,6 +160,7 @@ if (mysqli_query($conn, $query)) {
          <!-- View Details Limited to 5 lang-->
         <aside class="wrapper">
             <div class="navigation" style="width: 500px;" id="thirdAside">
+<<<<<<< HEAD
                
                         <div class="contentDiary2">
                         <h4 class="boldTitle" style="text-transform:uppercase; font-size:18px;"><a href="#"><b>Preview</b></a></h4>
@@ -176,6 +184,27 @@ if (mysqli_query($conn, $query)) {
                             </div>
                     </section>
                
+=======
+                <div class="contentDiary2">
+                <h4 class="boldTitle" style="text-transform:uppercase; font-size:18px;"><a href="#"><b>Preview</b></a></h4>
+                </div>
+                <section class="details2">
+                    <div class="tabCont">
+                        <?php
+                        $getDiary_note = mysqli_query($conn, "SELECT * FROM diary WHERE user_id = '$session_id' LIMIT 5") or die(mysqli_error($conn));
+                        while ($row = mysqli_fetch_array($getDiary_note)) {
+                        $id = $row['diary_id'];
+                        ?>
+                        <h4 class="d_title" style="text-transform:uppercase;"><b><?php echo $row['title']; ?></b></h4>
+                        <ul class="listGroup" style="list-style: none;">
+                            <li class="listGroup_item">
+                                <p class="d_note" align="justify"><?php echo $row['diary_note']; ?></p>
+                            </li>
+                        </ul>
+                        <?php }?>
+                    </div>
+                </section>
+>>>>>>> Ara
             </div>
         </aside>
         <!-- / View Details Limited to 5 lang-->

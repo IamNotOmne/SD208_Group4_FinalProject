@@ -114,7 +114,10 @@ if(mysqli_query($conn, $query)){
                 <div class="contentDiary">
                     <h4 class="boldTitle" style="text-transform:uppercase;"><b>My Diary</b></h4>
                 </div>
+<<<<<<< HEAD
                 <div class="scroll-div">
+=======
+>>>>>>> Ara
                 <section class="details">
                     <div class="tab" id="activity">
                         <ul class="listGroup">
@@ -128,7 +131,10 @@ if(mysqli_query($conn, $query)){
                         </ul>
                     </div>
                 </section>
+<<<<<<< HEAD
                 </div>
+=======
+>>>>>>> Ara
             </div>
         </aside>
         <!-- /Content of the Diary -->
@@ -140,10 +146,16 @@ if(mysqli_query($conn, $query)){
                     <h4 class="boldTitle" style="text-transform:uppercase; font-size:18px;"><a href="#"><b>Preview</b></a></h4>
                 </div>
                 <section class="details2">
+<<<<<<< HEAD
                     <div class="scroll-div">
                     <div class="tabContent">
                         <?php
                             $getDiary_note = mysqli_query($conn, "SELECT * FROM diary WHERE user_id = '$session_id'") or die(mysqli_error($conn));
+=======
+                    <div class="tabContent">
+                        <?php
+                            $getDiary_note = mysqli_query($conn, "SELECT * FROM diary WHERE user_id = '$session_id' LIMIT 5") or die(mysqli_error($conn));
+>>>>>>> Ara
                             while($row = mysqli_fetch_array($getDiary_note)){
                                 $id = $row['diary_id'];
                         ?>
@@ -155,7 +167,10 @@ if(mysqli_query($conn, $query)){
                         </ul>
                         <?php } ?>
                     </div>
+<<<<<<< HEAD
                     </div>
+=======
+>>>>>>> Ara
                 </section>
             </div>
         </aside>
