@@ -4,10 +4,6 @@ function menuToggle() {
     toggleMenu.classList.toggle('active')
 }
 
-<<<<<<< HEAD
-          
-}
-=======
 
 function iconToggle(){
     var SetTheme = document.body;
@@ -35,4 +31,3 @@ if(GetTheme === "DARK"){
 
 
 }
->>>>>>> Ara
