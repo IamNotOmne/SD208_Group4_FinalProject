@@ -68,7 +68,7 @@
                         <i class="uil uil-user icon"></i>
                     </div>
                     <div class="input-field">
-                        <input name="email" type="text" placeholder="Name@gmail.com" required />
+                        <input name="email" type="email" placeholder="Name@gmail.com" required />
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
