@@ -61,7 +61,7 @@ require_once('includes/connect.inc');
                         <span class="text">Email</span>
                     </div>
                     <div class="input-field">
-                        <input id="username" type="text" placeholder="example@gmail.com" name ="email" required />
+                        <input id="username" type="email" placeholder="example@gmail.com" name ="email" required />
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="textbeforeform">
